@@ -61,7 +61,6 @@ namespace devMobile.IoT.FieldGateway.Client
             Radio.OnTransmitSuccess += Radio_OnTransmitSuccess;
 
             Radio.Initialize(Device, spiBus, Device.Pins.D09, Device.Pins.D10, Device.Pins.D11);
-            //Radio.Address = Encoding.UTF8.GetBytes(Environment.MachineName);
             Radio.Address = Encoding.UTF8.GetBytes(DeviceAddress);
 
             Radio.Channel = nRF24Channel;
